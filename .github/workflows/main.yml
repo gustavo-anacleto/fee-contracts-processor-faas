@@ -33,5 +33,5 @@ jobs:
           aws-region: eu-north-1
 
       - name: Deploy Lambda function
-        run: aws lambda update-function-code --function-name fee-processor-faas --zip-file fileb://fee-contracts-processor-faas.jar
+        run: aws lambda update-function-code --function-name fee-processor-faas --zip-file fileb://target/fee-contracts-processor-faas.jar
 
